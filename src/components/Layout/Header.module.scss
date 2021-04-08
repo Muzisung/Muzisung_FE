@@ -1,0 +1,43 @@
+@import "../../styles/colors.scss";
+
+.Header {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  display: flex;
+  align-items: center;
+
+  padding: 0rem 1rem;
+
+  color: $text-color;
+  background-color: rgba($primary-color, 0.5);
+
+  height: 60px;
+  width: 100%;
+
+  box-sizing: border-box;
+}
+
+.Logo {
+  font-size: 1.5rem;
+}
+
+.Spacer {
+  flex: 1
+}
+
+.Navigation {
+  list-style: none;
+
+  display: flex;
+}
+
+.NavigationItem {
+  margin: 0px 8px;
+}
+
+.Anchor {
+  text-decoration: none;
+  color: $text-color;
+}
