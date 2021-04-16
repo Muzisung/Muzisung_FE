@@ -31,27 +31,21 @@
   font-weight: bold;
 }
 
-.Who {
-  color: $text-color;
-  //color: $primary-color-glen;
-  font-size: 0.85rem;
-  font-weight: bold;
-
-  padding: 5px 5px;
-}
-
-.LinkWho {
-  text-decoration: none;
-  padding: 5px 5px;
-}
-
 .Link {
   list-style: none;
   display: flex;
+  padding: 0 0 0 70px;
+
+  font-size: 0.8rem;
+  text-align: center;
 }
 
 .LinkItem {
+  display: inline-block;
+  text-decoration: none;
+
   margin: 0 5px;
+  //padding: 5px 5px;
 }
 
 .Anchor {
@@ -61,6 +55,13 @@
 }
 
 /* This is Test Code..! */
+
+.Test {
+  text-align: center;
+  margin: 5px 5px;
+  padding: 5px 5px;
+}
+
 .Test2 {
   flex: 3;
   list-style: none;
@@ -72,4 +73,19 @@
 
 .Test3 {
   margin: 0px 8px;
+}
+
+.LinkWho {
+  text-decoration: none;
+  padding: 5px 5px;
+  float: left;
+}
+
+.Who {
+  color: $text-color;
+  //color: $primary-color-glen;
+  font-size: 0.85rem;
+  font-weight: bold;
+
+  padding: 5px 5px;
 }
