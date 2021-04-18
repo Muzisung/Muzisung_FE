@@ -1,0 +1,43 @@
+.NoticeListItem {
+  display: block;
+  box-sizing: border-box;
+
+  height: 55px;
+  padding: 5px 10px;
+  margin-top: 10px;
+  
+  opacity: 0;
+  border: 1px solid black;
+
+  &__Title {
+    margin: 0;
+    line-height: 22.5px;
+  }
+
+  &__Date {
+    display: block;
+    line-height: 22.5px;
+    text-align: right;    
+  }
+
+  @for $number from 1 through 5 {
+    &:nth-child(#{$number}) {
+      @if $number == 1 {
+        margin-top: 0;
+      }
+
+      animation: dropIn 0.25s ease-in (0.05s * $number) forwards;
+    }
+  }
+}
+
+@keyframes dropIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-15%);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0%);
+  }
+}
