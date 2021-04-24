@@ -47,7 +47,7 @@ function Footer() {
           </a>
         </li>
         <li className={Styles.LinkItem}>
-          <a className={Styles.Anchor} href="http://www.dongguk.edu">
+          <a className={Styles.Anchor} href="/">
             Dongguk University
           </a>
         </li>
