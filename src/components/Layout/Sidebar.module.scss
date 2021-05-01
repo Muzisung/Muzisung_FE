@@ -7,37 +7,55 @@
   height: 100%;
   background-color: rgba($primary-color-glen, 0.5);
   transition: 1s;
+
+  &:hover {
+    width: 300px;
+  }
+
+  ul {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    li {
+      position: relative;
+      width: 100%;
+      list-style: none;
+
+      &:hover {
+        background: rgba(black, 0.5);
+      }
+    }
+
+    a {
+      position: relative;
+      display: block;
+      width: 100%;
+      display: flex;
+      text-decoration: rgba($text-color, 0.7);
+
+      .title {
+        position: relative;
+        display: block;
+        padding: 0;
+        height: 60px;
+        line-height: 150px;
+        text-align: left;
+        white-space: nowrap;
+      }
+    }
+  }
+
+  /*
+   * 2021/04/26. Glen.
+   * This is a test code.
+   * Test code START.
+   */
+  flex: 1;
+  /*
+   * Test code END.
+   */
 }
-.Sidebar:hover {
-  width: 300px;
-}
-.Sidebar ul {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-}
-.Sidebar ul li {
-  position: relative;
-  width: 100%;
-  list-style: none;
-}
-.Sidebar ul li:hover {
-  background: rgba(black, 0.5);
-}
-.Sidebar ul li a {
-  position: relative;
-  display: block;
-  width: 100%;
-  display: flex;
-  text-decoration: rgba($text-color, 0.7);
-}
-.Sidebar ul li a .title {
-  position: relative;
-  display: block;
-  padding: 0;
-  height: 60px;
-  line-height: 150px;
-  text-align: left;
-  white-space: nowrap;
-}
+
+// Navigation, Footer SCSS를 가져와서 참조를 한 다음 height를 계산해서 나머지를 비율로 설정.
